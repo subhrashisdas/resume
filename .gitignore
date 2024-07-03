@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+*.pdf
+*.aux
+*.log
+*.out

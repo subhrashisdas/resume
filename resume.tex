@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+    \usepackage[english]{babel}
+    \input{config/minimal-resume-config}
+    \begin{document}
+
+\begin{center}
+	% Personal
+	% ------------------------
+	{\fontsize{\sizeone}{\sizeone}\fontspec[Path = fonts/,LetterSpace=15]{Montserrat-Regular} SUBHRASHIS DAS}
+	\\
+	\vspace{2mm}
+	{\fontsize{1em}{1em}\fontspec[Path = fonts/]{Montserrat-Light} https://subh.me/ -- das.subhrashis@gmail.com -- +91-99379 98464}
+\end{center}
+
+% Chapter: Professional Summary
+% ------------------------
+
+\chap{PROFESSIONAL SUMMARY}{
+
+	\begin{newitemize}
+		{I'm focused on making technical processes easier and improving how businesses operate. By taking a step back and looking at the entire company, I can find ways to simplify things. This approach helps me understand and discover ways to streamline processes. As a Backend Developer for eight years, I have built projects from scratch and successfully migrated many. It's not just about coding; it's about making things straightforward, leading teams, saving money, avoiding technical debt, and ultimately making businesses better.}
+	\end{newitemize}
+}
+
+% Chapter: Work Experience
+% ------------------------
+
+\chap{WORK EXPERIENCE}{
+
+	\job
+	{Slice}
+	{Oct 2021 – Jan 2024}
+	{Software Development Engineer 3}
+	{Bengaluru, India}
+	{\begin{newitemize}
+
+		\item {Re-designed and re-implemented a high-performance transaction passbook, consolidating data from multiple sources. Achieved a remarkable 4x performance improvement, resulting in a 60\% cost reduction, saving approximately 10k USD per month. Successfully executed a seamless migration from ElasticSearch to OpenSearch with zero downtime.}
+		\item {Led and developed an Activity Centre service for use across multiple services. Established a standardized method for sharing activities among various internal services.}
+		\item {Optimised Billing processes for 200M USD transactions every month, reducing processing time from 10 to 3 hours. This process involves data consolidation across multiple services, notifications to various channel, data sync to passbook in record time and avoid duplicate repayments.}
+		\item {In response to the sudden implementation of new data and loan regulations by RBI, the business model was quickly shifted from prepaid cards to loans. Amid this transition, I led the repayments team, successfully reorganizing six critical services including repayments, passbook, billing, migrations, and notifications to ensure compliance within a tight two-month timeframe.}
+		\item {Managed and made significant contributions to repayments team comprising 10+ members. Leveraged Amazon EMR's Spark to facilitate the smooth transfer of repayment data from MongoDB to PostgreSQL, effectively minimizing downtime and ensuring zero data loss.}
+		\end{newitemize}}
+
+	\job
+	{Anatta}
+	{Aug 2019 – Oct 2021}
+	{Senior Application Engineer}
+	{Bengaluru, India}
+	{\begin{newitemize}
+		
+		\item {Developed various reusable business modules for esteemed clients such as Rothys, FourSigmatic, ReadySetFood, TrueBotanicals, and SocietySocial. These modules include functionalities like quizzes, analytics, subscription management, logistics, and dashboards, contributing to the enhancement of overall business operations.}
+		\item {Collaborated on building a SaaS platform named Upscribe, writing business modules for a Shopify-based subscription platform. These modules included referral systems, analytics, upselling features, and more. Worked with various clients to meet custom requirements.}
+		\item {Designed and implemented a comprehensive ETL pipeline using open-source technologies such as Airbyte and Metabase. Developed a custom plugin for Airbyte to facilitate real-time and batch synchronization of data from Shopify to the database. Optimized the syncing process to efficiently resume from where it left off.}
+		\item {Built password and secret manager for teams named Vault from scratch which includes third party access manager, sharing one time secret, self hosted video call, chrome plugin and many more.}
+		\end{newitemize}}
+
+	\job
+	{RentoMojo}
+	{Mar 2018 – Aug 2019}
+	{Senior Software Engineer}
+	{Bengaluru, India}
+	{\begin{newitemize}
+
+		\item {Developed business logic modules for the core operations of the rental system, covering partner collaboration, invoicing, optimized search, wish-list, notifications, dynamic banners, and more. Provided guidance to employees and interns during this period.}
+		\item {Created the entire backend system for Vastram, an E-commerce service for renting clothing. Included RFID-based bulk tracking for dresses and implemented a Resource Management platform.}
+		\item {Initiated and built a Lead Management Dashboard, integrating automated phone calls, scheduling, and a comprehensive user behavior dashboard using analytics tools. Achieved a 4x increase in conversion rates while optimizing the sales team's workload.}	
+	\end{newitemize}}
+
+	\job
+	{PrettySecrets}
+	{Aug 2016 – Jul 2017}
+	{Software Development Engineer}
+	{Mumbai, India}
+	{\begin{newitemize}
+
+		\item {Successfully transitioned from an outdated Magento platform to an in-house OmniChannel E-commerce system with minimal downtime and zero data loss. Streamlined the database structure by analyzing over 400 Magento tables and consolidating them to approximately 50 tables. Achieved near-realtime migration, significantly enhancing web performance by at least 10 times, with response times consistently under 50 milliseconds.}
+		\item {Incorporated essential features such as a user-friendly portal, smooth multi-channel sales integration, a budget-friendly delivery system, and an effective recommendation engine. Further enhanced operational efficiency and customer experience by seamlessly integrating a barcode reader directly at the shop level.}
+		\item {Replaced an expensive and complex analytics tool with our custom, user-friendly Marketing, Tracking, and Notification tool. Developed it from the ground up, consolidating user insights from various sources. Not only did it save us money, but it also made things a whole lot simpler.}
+		\end{newitemize}}
+
+	\job
+	{AasaanJobs}
+	{Oct 2015 – Jul 2016}
+	{Software Development Engineer}
+	{Mumbai, India}
+	{\begin{newitemize}
+
+		\item {Engineered critical backend components for a user-friendly Human Resource Management System tailored for SMEs, delivered as a SaaS product. Developed modules include Payroll, Attendance, Leave, and Employee Management.}
+		\item {Played a key role in enhancing the in-house Recruitment Management system, focusing on syncing data efficiently from Postgres to ElasticSearch using a CQRS-like pattern. This optimization significantly improved the system's ability to manage loads, queries, and analytics in a cost-effective and streamlined manner.}
+		\end{newitemize}}
+}
+
+% Chapter: Skills
+% ------------------------
+
+\chap{SKILLS}{
+
+	\begin{newitemize}
+		\item Management Skills: Hiring, Mentoring, Team Building, Performance Review, Agile Methodologies
+		\item Industry Expertise: Finance, Fintech, E-commerce, Retail, Logistics, Human Resources, and SaaS
+		\item Programming Languages: TypeScript, JavaScript, Node.js, Java, Python
+		\item Databases: PostgreSQL, MongoDB, Elasticsearch, Redis, RedShift
+		\item Message Brokers: Kafka, RabbitMQ
+		\item Cloud: AWS, Docker, Kubernetes
+		\item Monitoring: Sentry, Grafana, Kibana, New Relic, Prometheus
+		\item Frameworks: NestJs, Spring Boot, Django, GraphQL
+		\item Data Integration and Analytics: Airbyte, Amazon EMR, Debezium
+	\end{newitemize}
+}
+
+% Chapter: Education
+% ------------------------
+
+\chap{EDUCATION}{
+
+    \school
+    {International Institute of Information Technology, Bhubaneswar}
+    {2011 – 2015}
+    {Bachelor of Technology in Electrical and Electronics Engineering}
+    {Bhubaneswar}
+    {}
+}
+\end{document}
